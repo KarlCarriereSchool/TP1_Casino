@@ -12,7 +12,6 @@ public class Guichet extends AppCompatActivity implements View.OnClickListener{
 
     public static final String JETONS = "Jetons";
     private EditText txtQuantite;
-    private Button btnConfirmer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +19,7 @@ public class Guichet extends AppCompatActivity implements View.OnClickListener{
         setContentView(R.layout.activity_guichet);
 
         txtQuantite = findViewById(R.id.txtQuantite);
-        btnConfirmer = findViewById(R.id.btnConfirmer);
+        Button btnConfirmer = findViewById(R.id.btnConfirmer);
 
         btnConfirmer.setOnClickListener(this);
     }

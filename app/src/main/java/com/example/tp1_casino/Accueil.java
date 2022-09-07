@@ -21,7 +21,7 @@ public class Accueil extends AppCompatActivity
     private TextView txtNomUser;
     private TextView txtNbJetons;
     private Button btnRoulette;
-        private int jetons;
+    private int jetons;
     private String utilisateur;
 
     ActivityResultLauncher<Intent> guichet;
@@ -80,7 +80,8 @@ public class Accueil extends AppCompatActivity
         Intent intent;
         switch (v.getId()){
             case R.id.btnRoulette:
-                //Do Something
+                intent = new Intent(Accueil.this, Roulette.class);
+                startActivity(intent);
                 break;
             case R.id.btnGuichet:
                 intent = new Intent(getApplicationContext(), Guichet.class);

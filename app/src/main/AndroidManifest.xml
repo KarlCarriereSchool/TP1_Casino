@@ -14,11 +14,17 @@
         android:theme="@style/Theme.TP1_Casino"
         tools:targetApi="31">
         <activity
+            android:name=".Roulette"
+            android:exported="false"
+            android:parentActivityName=".Accueil"/>
+        <activity
             android:name=".Guichet"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Accueil"/>
         <activity
             android:name=".Accueil"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Connexion"/>
         <activity
             android:name=".Connexion"
             android:exported="true">
