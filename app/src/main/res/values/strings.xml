@@ -1,3 +1,13 @@
-<resources>
-    <string name="app_name">TP1_Casino</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="Typos">TP1_Casino</string>
+    <string name="bonjour">Bonjour</string>
+    <string name="votre_solde_est_de">Votre solde est de</string>
+    <string name="utilisateur">Utilisateur</string>
+    <string name="jetons">Jetons</string>
+    <string name="nbJetons">x</string>
+    <string name="roulette">Roulette</string>
+    <string name="guichet">Guichet</string>
+    <string name="img_description">Logo du Casino Bellagio</string>
+    <string name="nom">Nom</string>
+    <string name="connexion">Connexion</string>
 </resources>

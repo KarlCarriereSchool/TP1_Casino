@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Connexion extends AppCompatActivity {
 
@@ -26,7 +27,7 @@ public class Connexion extends AppCompatActivity {
     public void gererClick(View v){
 
         SharedPreferences.Editor editor = sp.edit();
-        String stringNom = txtNom.toString();
+        String stringNom = txtNom.getText().toString();
         if (!sp.contains(stringNom)){
             editor.putInt(stringNom, 15);
         }
@@ -34,7 +35,7 @@ public class Connexion extends AppCompatActivity {
         editor.putString("session", stringNom);
         editor.apply();
 
-        Intent intent = new Intent(this, Accueil.class);
+        Intent intent = new Intent(Connexion.this, Accueil.class);
         startActivity(intent);
     }
 }

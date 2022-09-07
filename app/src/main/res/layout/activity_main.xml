@@ -11,39 +11,49 @@
         android:layout_width="356dp"
         android:layout_height="171dp"
         android:layout_marginTop="128dp"
+        android:contentDescription="@string/img_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bellagio_las_vegas_logo_vector"
-        android:contentDescription="@string/img_description" />
+        app:srcCompat="@drawable/bellagio_las_vegas_logo_vector" />
 
     <EditText
         android:id="@+id/txtNom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
+        android:autofillHints="Votre nom d'utilisateur"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/nom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_bellagio"
-        android:autofillHints="Votre nom d'utilisateur"
         tools:ignore="LabelFor" />
 
     <Button
         android:id="@+id/btn_connexion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/connexion"
+        android:layout_marginTop="20dp"
         android:onClick="gererClick"
+        android:text="@string/connexion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNom"
-        app:layout_constraintVertical_bias="0.193"
+        app:layout_constraintTop_toBottomOf="@+id/txtHintNom"
+        app:layout_constraintVertical_bias="0.325"
         tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/txtHintNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNom" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
