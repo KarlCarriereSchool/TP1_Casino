@@ -10,4 +10,6 @@
     <string name="img_description">Logo du Casino Bellagio</string>
     <string name="nom">Nom</string>
     <string name="connexion">Connexion</string>
+    <string name="confirmer">Confirmer</string>
+    <string name="quantite">Quantité</string>
 </resources>
