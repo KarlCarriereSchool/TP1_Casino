@@ -7,7 +7,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class Connexion extends AppCompatActivity {
 
@@ -32,7 +31,7 @@ public class Connexion extends AppCompatActivity {
             editor.putInt(stringNom, 15);
         }
 
-        editor.putString("session", stringNom);
+        editor.putString("Session", stringNom);
         editor.apply();
 
         Intent intent = new Intent(Connexion.this, Accueil.class);
