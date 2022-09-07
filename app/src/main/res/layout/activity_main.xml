@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Connexion">
 
     <ImageView
         android:id="@+id/img_bellagio"
@@ -14,7 +14,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bellagio_las_vegas_logo_vector" />
+        app:srcCompat="@drawable/bellagio_las_vegas_logo_vector"
+        android:contentDescription="@string/img_description" />
 
     <EditText
         android:id="@+id/txtNom"
@@ -23,23 +24,26 @@
         android:layout_marginTop="76dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nom"
+        android:text="@string/nom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_bellagio" />
+        app:layout_constraintTop_toBottomOf="@+id/img_bellagio"
+        android:autofillHints="Votre nom d'utilisateur"
+        tools:ignore="LabelFor" />
 
     <Button
         android:id="@+id/btn_connexion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Connexion"
+        android:text="@string/connexion"
         android:onClick="gererClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNom"
-        app:layout_constraintVertical_bias="0.193" />
+        app:layout_constraintVertical_bias="0.193"
+        tools:ignore="UsingOnClickInXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

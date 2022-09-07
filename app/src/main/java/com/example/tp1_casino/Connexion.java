@@ -2,12 +2,13 @@ package com.example.tp1_casino;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class Connexion extends AppCompatActivity {
 
     private EditText txtNom;
     private SharedPreferences sp;
@@ -32,5 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
         editor.putString("session", stringNom);
         editor.apply();
+
+        Intent intent = new Intent(this, Accueil.class);
+        startActivity(intent);
     }
 }
