@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bellagio Casino</string>
+    <string name="bonjour">Welcome</string>
+    <string name="jetons">Chips</string>
+    <string name="guichet">Chips counter</string>
+    <string name="img_description">Bellagio Casino Logo</string>
+    <string name="nom">Name</string>
+    <string name="connexion">Connection</string>
+    <string name="confirmer">Confirm</string>
+    <string name="quantite">Quantity</string>
+    <string name="pair">Even</string>
+    <string name="impair">Odd</string>
+    <string name="pair_impair">Even / Odd</string>
+    <string name="choix_de_nombre">Number chosen</string>
+    <string name="votremise">Your bet</string>
+    <string name="vos_jetons_restants">Your chips left</string>
+    <string name="jouer">Play</string>
+    <string name="r_sultat">Result</string>
+    <string name="nombre">Number</string>
+    <string name="utilisateur">User</string>
+    <string name="votre_solde_est_de">Your balance is</string>
+</resources>

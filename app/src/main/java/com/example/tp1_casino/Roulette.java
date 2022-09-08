@@ -64,7 +64,7 @@ public class Roulette
         radioGroupCouleur.setOnCheckedChangeListener(this);
         swToggle.setOnCheckedChangeListener(this);
 
-
+        txtNumber.setEnabled(false);
     }
 
     public void onClick(View v){

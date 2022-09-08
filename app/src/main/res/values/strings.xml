@@ -4,12 +4,20 @@
     <string name="votre_solde_est_de">Votre solde est de</string>
     <string name="utilisateur">Utilisateur</string>
     <string name="jetons">Jetons</string>
-    <string name="nbJetons">x</string>
-    <string name="roulette">Roulette</string>
+    <string name="roulette" translatable="false">Roulette</string>
     <string name="guichet">Guichet</string>
     <string name="img_description">Logo du Casino Bellagio</string>
     <string name="nom">Nom</string>
     <string name="connexion">Connexion</string>
     <string name="confirmer">Confirmer</string>
     <string name="quantite">Quantité</string>
+    <string name="pair">Pair</string>
+    <string name="impair">Impair</string>
+    <string name="pair_impair">Pair / Impair</string>
+    <string name="choix_de_nombre">Choix de nombre</string>
+    <string name="votremise">Votre mise</string>
+    <string name="vos_jetons_restants">Vos jetons restants</string>
+    <string name="jouer">Jouer</string>
+    <string name="r_sultat">Résultat</string>
+    <string name="nombre">Nombre</string>
 </resources>
