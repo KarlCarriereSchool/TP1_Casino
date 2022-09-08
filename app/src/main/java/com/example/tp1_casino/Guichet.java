@@ -18,12 +18,15 @@ public class Guichet extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guichet);
 
+        // Affectation des widgets à des variables
         txtQuantite = findViewById(R.id.txtQuantite);
         Button btnConfirmer = findViewById(R.id.btnConfirmer);
 
+        // Déclaration des listeners
         btnConfirmer.setOnClickListener(this);
     }
 
+    // Gestion du clic du bouton
     public void onClick(View v) {
         if (v.getId() == R.id.btnConfirmer) {
             int qteJetons = Integer.parseInt(txtQuantite.getText().toString());

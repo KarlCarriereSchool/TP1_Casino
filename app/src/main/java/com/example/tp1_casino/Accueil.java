@@ -24,29 +24,31 @@ public class Accueil extends AppCompatActivity
     private int jetons;
     private String utilisateur;
 
-    ActivityResultLauncher<Intent> guichet;
+    ActivityResultLauncher<Intent> launcher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accueil);
 
-        sp = getSharedPreferences("Utilisateurs", MODE_PRIVATE);
+        chargerSharedPreferences();
 
-        utilisateur = sp.getString("Session", "Utilisateur");
-        jetons = sp.getInt(utilisateur, 0);
-
+        // Affectation des widgets à des variables
         txtNomUser = findViewById(R.id.txtNomUser);
         txtNbJetons = findViewById(R.id.txtNbJetons);
         btnRoulette = findViewById(R.id.btnRoulette);
         Button btnGuichet = findViewById(R.id.btnGuichet);
 
+        // Déclaration des listeners
         btnRoulette.setOnClickListener(this);
         btnGuichet.setOnClickListener(this);
 
+        // Affichage
         gestionAffichage();
 
-        guichet = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+        // Résultat du retour du launcher
+        launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+            // Si on reviens du guichet, on ajoute les jetons
             if (result.getResultCode() == Activity.RESULT_OK)
             {
                 //Manipulation du data
@@ -59,36 +61,45 @@ public class Accueil extends AppCompatActivity
                 SharedPreferences.Editor editor = sp.edit();
                 editor.putInt(utilisateur, jetons);
                 editor.apply();
-
-                //Mise à jour de l'affichage
-                gestionAffichage();
             }
+            // Mise à jour de l'affichage
+            gestionAffichage();
         });
     }
 
-        private void gestionAffichage() {
-            txtNomUser.setText(utilisateur);
-            txtNbJetons.setText(String.valueOf(jetons));
+    // Chargement des SharedPreferences
+    private void chargerSharedPreferences() {
+        sp = getSharedPreferences("Utilisateurs", MODE_PRIVATE);
+        utilisateur = sp.getString("Session", "Utilisateur");
+        jetons = sp.getInt(utilisateur, 0);
+    }
 
-            if (jetons <= 0) {
-                btnRoulette.setEnabled(false);
-            }
-        }
+    // Gestion de l'affichage du texte de bienvenue et du bouton roulette
+    private void gestionAffichage() {
+        chargerSharedPreferences();
 
-        @SuppressLint("NonConstantResourceId")
-        public void onClick(View v){
-        Intent intent;
-        switch (v.getId()){
-            case R.id.btnRoulette:
-                intent = new Intent(Accueil.this, Roulette.class);
-                startActivity(intent);
-                break;
-            case R.id.btnGuichet:
-                intent = new Intent(getApplicationContext(), Guichet.class);
-                guichet.launch(intent);
-                break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + v.getId());
+        txtNomUser.setText(utilisateur);
+        txtNbJetons.setText(String.valueOf(jetons));
+
+        // Affichage du bouton activé ou non
+        btnRoulette.setEnabled(jetons > 0);
+    }
+
+    // Gestion du clic des boutons
+    @SuppressLint("NonConstantResourceId")
+    public void onClick(View v){
+    Intent intent;
+    switch (v.getId()){
+        case R.id.btnRoulette:
+            intent = new Intent(Accueil.this, Roulette.class);
+            launcher.launch(intent);
+            break;
+        case R.id.btnGuichet:
+            intent = new Intent(getApplicationContext(), Guichet.class);
+            launcher.launch(intent);
+            break;
+        default:
+            throw new IllegalStateException("Unexpected value: " + v.getId());
         }
     }
 }
