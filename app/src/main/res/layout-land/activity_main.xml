@@ -4,57 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Guichet">
+    tools:context=".Connexion">
 
-    <EditText
-        android:id="@+id/txtQuantite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:autofillHints="Nombre"
-        android:ems="10"
-        android:inputType="numberSigned"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTitre"
-        app:layout_constraintVertical_bias="0.309"
-        tools:ignore="LabelFor" />
-
-    <Button
-        android:id="@+id/btnConfirmer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/confirmer"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLblQuantite"
-        app:layout_constraintVertical_bias="0.39" />
-
-    <TextView
-        android:id="@+id/txtTitre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/guichet"
-        android:textColor="#393939"
-        android:textSize="24sp"
+    <ImageView
+        android:id="@+id/img_bellagio"
+        android:layout_width="298dp"
+        android:layout_height="117dp"
+        android:contentDescription="@string/img_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.157"
+        app:srcCompat="@drawable/bellagio_las_vegas_logo_vector" />
 
-    <TextView
-        android:id="@+id/txtLblQuantite"
+    <EditText
+        android:id="@+id/txtNom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quantite"
+        android:autofillHints="Votre nom d'utilisateur"
+        android:ems="10"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtQuantite"
+        app:layout_constraintTop_toBottomOf="@+id/img_bellagio"
+        app:layout_constraintVertical_bias="0.097"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/btn_connexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="gererClick"
+        android:text="@string/connexion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHintNom"
+        app:layout_constraintVertical_bias="0.259"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/txtHintNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNom"
         app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

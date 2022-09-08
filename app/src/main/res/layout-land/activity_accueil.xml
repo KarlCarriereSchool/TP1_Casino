@@ -7,19 +7,6 @@
     tools:context=".Accueil">
 
     <TextView
-        android:id="@+id/txtBonjour"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/bonjour"
-        android:textColor="#393939"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.101" />
-
-    <TextView
         android:id="@+id/txtNomUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,35 +14,10 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtBonjour"
-        app:layout_constraintVertical_bias="0.016" />
-
-    <TextView
-        android:id="@+id/txtSolde"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/votre_solde_est_de"
-        android:textColor="#393939"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNomUser"
-        app:layout_constraintVertical_bias="0.127" />
-
-    <TextView
-        android:id="@+id/txtNbJetons"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#393939"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSolde"
-        app:layout_constraintVertical_bias="0.027" />
-
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/txtJetons"
@@ -65,9 +27,51 @@
         android:textColor="#393939"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNbJetons"
-        app:layout_constraintVertical_bias="0.033" />
+        app:layout_constraintVertical_bias="0.122" />
+
+    <TextView
+        android:id="@+id/txtNbJetons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#393939"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSolde"
+        app:layout_constraintVertical_bias="0.14" />
+
+    <TextView
+        android:id="@+id/txtSolde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/votre_solde_est_de"
+        android:textColor="#393939"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.226"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNomUser"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <TextView
+        android:id="@+id/txtBonjour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="@string/bonjour"
+        android:textColor="#393939"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.044" />
+
 
     <Button
         android:id="@+id/btnRoulette"
@@ -76,33 +80,33 @@
         android:text="@string/roulette"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.779"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtJetons"
-        app:layout_constraintVertical_bias="0.282" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.121" />
 
     <Button
         android:id="@+id/btnGuichet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
         android:text="@string/guichet"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.779"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRoulette"
-        app:layout_constraintVertical_bias="0.105" />
+        app:layout_constraintVertical_bias="0.427" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="414dp"
-        android:layout_height="149dp"
+        android:layout_width="345dp"
+        android:layout_height="83dp"
         android:contentDescription="@string/img_description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.048"
         app:srcCompat="@drawable/bellagio_las_vegas_logo_vector" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

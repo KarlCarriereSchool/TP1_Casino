@@ -18,6 +18,5 @@
     <string name="jouer">Play</string>
     <string name="r_sultat">Result</string>
     <string name="nombre">Number</string>
-    <string name="utilisateur">User</string>
     <string name="votre_solde_est_de">Your balance is</string>
 </resources>

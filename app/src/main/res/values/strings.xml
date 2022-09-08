@@ -1,8 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Casino Bellagio</string>
     <string name="bonjour">Bonjour</string>
     <string name="votre_solde_est_de">Votre solde est de</string>
-    <string name="utilisateur">Utilisateur</string>
     <string name="jetons">Jetons</string>
     <string name="roulette" translatable="false">Roulette</string>
     <string name="guichet">Guichet</string>

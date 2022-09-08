@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/carri/AndroidStudioProjects/TP1_Casino/app/src/main/res/layout/activity_accueil.xml" value="0.25" />
+        <entry key="..\:/Users/carri/AndroidStudioProjects/TP1_Casino/app/src/main/res/layout-land/activity_accueil.xml" value="0.5427083333333333" />
+        <entry key="..\:/Users/carri/AndroidStudioProjects/TP1_Casino/app/src/main/res/layout-land/activity_guichet.xml" value="0.5427083333333333" />
+        <entry key="..\:/Users/carri/AndroidStudioProjects/TP1_Casino/app/src/main/res/layout-land/activity_main.xml" value="0.5427083333333333" />
+        <entry key="..\:/Users/carri/AndroidStudioProjects/TP1_Casino/app/src/main/res/layout-land/activity_roulette.xml" value="0.5427083333333333" />
+        <entry key="..\:/Users/carri/AndroidStudioProjects/TP1_Casino/app/src/main/res/layout/activity_accueil.xml" value="0.33" />
         <entry key="..\:/Users/carri/AndroidStudioProjects/TP1_Casino/app/src/main/res/layout/activity_guichet.xml" value="0.30833333333333335" />
         <entry key="..\:/Users/carri/AndroidStudioProjects/TP1_Casino/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/carri/AndroidStudioProjects/TP1_Casino/app/src/main/res/layout/activity_roulette.xml" value="0.40564102564102567" />

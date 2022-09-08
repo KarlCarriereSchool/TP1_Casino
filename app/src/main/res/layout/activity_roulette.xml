@@ -10,14 +10,15 @@
         android:id="@+id/txtRoulette"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="@string/roulette"
         android:textColor="#393939"
         android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
 
     <RadioGroup
         android:id="@+id/radioGroupCouleur"
@@ -27,9 +28,12 @@
         android:orientation="horizontal"
         android:paddingStart="50dp"
         android:paddingEnd="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtChoixPairImpair">
+        app:layout_constraintTop_toBottomOf="@+id/txtChoixPairImpair"
+        app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
             android:id="@+id/rdoPair"
@@ -56,100 +60,108 @@
         android:id="@+id/txtNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtChoixNombre"
-        android:autofillHints=""
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/txtMise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtLabelMise"
-        android:autofillHints=""
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/txtChoixPairImpair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68dp"
         android:text="@string/pair_impair"
         android:textColor="#393939"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintHorizontal_bias="0.308"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtRoulette" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRoulette"
+        app:layout_constraintVertical_bias="0.134" />
 
     <TextView
         android:id="@+id/txtChoixNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/choix_de_nombre"
         android:textColor="#393939"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.327"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroupCouleur" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupCouleur"
+        app:layout_constraintVertical_bias="0.022" />
 
     <TextView
         android:id="@+id/txtLabelMise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:text="@string/votremise"
         android:textColor="#393939"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.291"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtJetonsRestants" />
+        app:layout_constraintTop_toBottomOf="@+id/txtJetonsRestants"
+        app:layout_constraintVertical_bias="0.072" />
 
     <TextView
         android:id="@+id/txtJetonsRestants"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="36dp"
         android:text="@string/vos_jetons_restants"
         android:textColor="#393939"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNumber"
+        app:layout_constraintVertical_bias="0.047" />
 
     <TextView
         android:id="@+id/txtNbJetonsRestants"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
         android:gravity="center_vertical"
         android:textColor="#393939"
         app:layout_constraintBottom_toBottomOf="@+id/txtJetonsRestants"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.209"
         app:layout_constraintStart_toEndOf="@+id/txtJetonsRestants"
-        app:layout_constraintTop_toBottomOf="@+id/txtNumber"
+        app:layout_constraintTop_toTopOf="@+id/txtJetonsRestants"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/txtResultat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
         android:textColor="#393939"
         android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/txtResultatLabel"
+        app:layout_constraintVertical_bias="0.07" />
 
     <Button
         android:id="@+id/btnJouer"
@@ -168,36 +180,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/r_sultat"
-        app:layout_constraintBottom_toTopOf="@+id/txtResultat"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtMise"
-        app:layout_constraintVertical_bias="0.762" />
+        app:layout_constraintVertical_bias="0.14" />
 
     <Switch
         android:id="@+id/swToggle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
         android:text="@string/pair_impair"
         app:layout_constraintBottom_toTopOf="@+id/txtChoixPairImpair"
         app:layout_constraintEnd_toStartOf="@+id/lblNombre"
-        app:layout_constraintHorizontal_bias="0.985"
+        app:layout_constraintHorizontal_bias="0.981"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtRoulette"
-        app:layout_constraintVertical_bias="0.458"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
 
     <TextView
         android:id="@+id/lblNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="130dp"
         android:text="@string/nombre"
         android:textColor="#393939"
         app:layout_constraintBottom_toTopOf="@+id/txtChoixPairImpair"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtRoulette" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
